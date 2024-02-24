@@ -1,0 +1,865 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+div {
+    display: block;
+}
+.html,.body{
+    height: 100vh;
+    overflow-y: hidden;
+    background-color: #f7f7fc;
+}
+.html {
+    box-sizing: border-box;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+.body{
+    font-family: 'Rubik', sans-serif;
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 15px;
+}
+.w-100{
+    width: 100%;
+}
+.h-100{
+    height: 100%;
+}
+.d-flex {
+    display: flex!important;
+}
+.p25{
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+.pr25{
+    padding-right: 25px;
+}
+.pl10{
+    padding-left: 10px;
+}
+.fs25{
+    font-size: 25px;
+}
+.align-items-end {
+    align-items: flex-end!important;
+}
+.align-items-center {
+    -ms-flex-align: center!important;
+    align-items: center!important;
+}
+.text-algin-center{
+    text-align: center;
+}
+label {
+    display: inline-block;
+}
+.form-label {
+    margin-bottom: 0.5rem;
+}
+.form-control {
+    display: block;
+    width: 100%;
+    padding: 0.375rem 0.75rem;
+    height: 50px;
+    max-height: 50px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #000000;
+    background: #FFF;
+    background-color:#FFF;
+    border: 1px solid #FFF;
+    border-radius: 15px;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+.form-group{
+text-align: left;
+margin-top: 10px;
+}
+.text-muted {
+    color: #6c757d!important;
+}
+.btn:not(:disabled):not(.disabled) {
+    cursor: pointer;
+}
+.btn{
+    background-color: #E5105D; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  border-radius: 15px;
+}
+.btn-ouline{
+    background-color: #FFF !important;
+    border: 2px solid #E5105D !important;
+    color: #000000 !important;
+}
+.btn-light {
+    color: #212529;
+    background-color: #fff;
+    border-color: #fff;
+}
+.btn-onesta{
+    text-align: center;
+}
+.btn-onesta-outline{
+    display: flex;
+    align-items: center;
+    color:#E5105D;
+    border: 2px solid #E5105D;
+    background-color: transparent;
+}
+.btn-outline-primary {
+    color: #007bff;
+    border-color: #007bff;
+}
+.btn-onesta i, .btn-onesta-outline i{
+font-size: 15px;
+padding-right: 5px;
+padding-left: 5px;
+}
+.btn-onesta:hover {
+    color: #fff;
+    background-color: #840a36;
+    border-color: #840a36;
+}
+.btn-onesta:focus {
+    color: #fff;
+    background-color: #e5105d;
+    border-color: #e5105d;
+    box-shadow: 0 0 0 0.2rem rgba(250,207,223,.5);
+}
+.btn-onesta:disabled {
+    color: #fff;
+    background-color: #f288ae;
+    border-color: #f288ae;
+}
+/* The container must be positioned relative: */
+.custom-select {
+    position: relative;
+  }
+  
+  .custom-select select {
+    display: none; /*hide original SELECT element: */
+  }
+  
+  .select-saelected {
+    background-color: #FFF;
+  }
+  
+  /* Style the arrow inside the select element: */
+  .select-selected:after {
+    position: absolute;
+    content: "";
+    top: 14px;
+    right: 10px;
+    width: 0;
+    height: 0;
+    border: 6px solid transparent;
+    border-color: #fff transparent transparent transparent;
+  }
+  
+  /* Point the arrow upwards when the select box is open (active): */
+  .select-selected.select-arrow-active:after {
+    border-color: transparent transparent #fff transparent;
+    top: 7px;
+  }
+  .select-selected.select-arrow-active{
+    border: 2px solid #000000;
+  }
+  /* style the items (options), including the selected item: */
+.select-selected {
+    color: #6E7191;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #B7BBBC;
+    padding: 10px 10px;
+    border-radius: 15px;
+    cursor: pointer;
+    height: 50px;
+  }
+  .select-items div{
+    color: #000000;
+    padding: 10px 0;
+  }
+  /* Style items (options): */
+  .select-items {
+    position: absolute;
+    background-color: #FFF;
+    border: 2px solid #000000;
+    border-radius: 15px;
+    padding: 10px 10px;
+    margin-top: 5px;
+    top: 100%;
+    left: 0;
+    right: 0;
+    z-index: 99;
+  }
+  
+  /* Hide the items when the select box is closed: */
+  .select-hide {
+    display: none;
+  }
+  
+  .select-items div:hover, .same-as-selected {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+.badge {
+    display: inline-block;
+    padding: 0.25em 0.4em;
+    font-size: 75%;
+    font-weight: 700;
+    line-height: 1;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: baseline;
+    border-radius: 0.25rem;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+.badge-pill {
+    padding-right: 0.6em;
+    padding-left: 0.6em;
+    border-radius: 10rem;
+}
+.badge-onesta {
+    color: #fff;
+    background-color: #e5105d;
+}
+.badge-success {
+    color: #fff;
+    background-color: #28a745;
+}
+.badge-danger {
+    color: #fff;
+    background-color: #dc3545;
+}
+.split {
+    height: 100%;
+    width: 50%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    overflow-x: hidden;
+  }
+  
+  .left {
+    left: 0;
+    background-color: #f7f7fc;
+  }
+  
+  .right {
+    right: 0;
+    background-image: url(../img/unsplash_tZw3fcjUIpM.png);
+    background-position: center center;
+    background-size:cover ;
+    background-repeat: no-repeat;
+  }
+  
+  .centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  
+  .centered img {
+    width: 91px;
+  }
+  .login-form{
+    width: 400px;
+  }
+  .text-login-image{
+    position: absolute;
+    top: 70%;
+    left: 5%;
+  }
+  .text-login-image h2{
+    color: #FFF;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 0.75px;
+  }
+  .text-login-form h2{
+    font-size: 35px ;
+  }
+  .side-menu-logo{
+    border-bottom: 1px solid #FFF;
+    margin-bottom: 15px;
+    height: 85px;
+    text-align: center;
+  }
+  .side-menu-logo .side-menu-text{
+    position: relative;
+    top: -10px;
+    font-size: 17px;
+    font-weight: 700;
+    color: #FFF;
+  }
+  .side-menu{
+    width: 235px;
+    height: 100%;
+    padding-left: 10px;
+    padding-right: 10px;
+    box-sizing: border-box;
+    background-image: linear-gradient(0deg,#f35337,#e5105d);
+    display: flex;
+    flex-flow: column nowrap;
+    box-shadow: 4px 0px 6px rgba(17, 26, 41, 0.6);
+    position: absolute;
+    top: 0;     
+    transition: .5s;
+    /* transform: translateX(0); */
+}
+.nav-header{
+    position: relative;
+    width: 100%;
+    height: 60px;
+    background-color:#5d6a72 ;
+}
+.content-wrap{
+    width: 100%;
+    height: 94%;
+    padding-top: 40px;
+    padding-right: 20px;
+    overflow-x: hidden;
+    
+}
+.content{
+    margin-left: 270px;
+    transition: .5s;
+}
+.side-menu form{
+    display: flex;
+    margin: 0 10px 50px;
+    border-radius: 100px;
+    border: 1px solid #fff;
+
+}
+.side-menu form input,
+.side-menu form button{
+    background-color: transparent;
+    color: #fff;
+    border:none;
+    padding:5px 10px;
+}
+.side-menu form input{
+    width: 230px;
+}
+.side-menu label{
+    position: absolute;
+    width: 40px;
+    height: 50px;
+    background-color: #e6145a;
+    color: #fff;
+    right: -40px;
+    top: 59px;
+    margin: auto;
+    line-height: 80px;
+    text-align: center;
+    font-size: 30px;
+    border-radius: 0 25px 25px 0;
+    cursor: pointer;
+    background-image: url(../img/Iconos/cerrar.svg);
+    background-position: 2px center;
+    background-repeat: no-repeat;
+}
+#side-menu-switch{
+    position: absolute;
+    opacity: 0;
+}
+#side-menu-switch:checked + .side-menu label{
+    background-image: url(../img/Iconos/abrir.svg);
+}
+#side-menu-switch:checked + .side-menu .side-menu-logo .side-menu-text{
+    display: none;
+}
+#side-menu-switch:checked + .side-menu{
+    width: 96px;
+}
+#side-menu-switch:checked + .side-menu label .fas{
+    transform:scaleX(-1);
+}
+#side-menu-switch:checked + .side-menu + .content-wrap .content{
+    margin-left: 127px;
+}
+::placeholder {
+     /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #fff;
+    opacity: 1; /* Firefox */
+}
+.side-menu form button{
+    width: 50px;
+}
+.side-menu form input:focus::placeholder{
+    color: #ccc;
+}
+.side-menu form input:focus,
+.side-menu form button:focus{
+    outline: none;
+}
+.side-menu nav a{
+    display: block ;
+    padding: 10px;
+    color: #fff;
+    font-weight: 500;
+    text-decoration: none;
+    position: relative;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 5px;
+}
+.side-menu nav a.active{
+    color: #5D6A72;
+    background: #FFF;
+    background-image: url(../img/Iconos/activeIndicator.svg);
+    background-position: left center;
+    background-repeat: no-repeat;
+    font-weight: 700;
+    
+}
+#side-menu-switch:checked + .side-menu nav a.active{
+    background-size: 3px;
+}
+.side-menu nav a.active:hover{
+    color: #5D6A72;
+    background: #FFF;
+    background-image: url(../img/Iconos/activeIndicator.svg);
+    background-position: left center;
+    background-repeat: no-repeat;
+    font-weight: 700;
+}
+.side-menu nav a:hover{
+    color: #FFF;
+    background: #EF709E;
+    background-image: none;
+}
+.side-menu nav a:focus{
+    color: #FFF;
+    background: #840a36;
+    background-image: none;
+}
+.side-menu nav a .side-menu-img{
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+.side-menu nav a+a::before{
+     content: '';
+     position: absolute;
+     left: 10px;
+     right: 10px;
+     top: 0;
+ }
+ /* Method 1 */
+ .side-menu nav a .fas{
+     margin-right: -1.1em;
+     transform: scale(0);
+     transition: .5s;
+ }
+ .side-menu nav a:hover .fas{
+    margin-right: 0.3em;
+     transform: scale(1);
+ }
+ #side-menu-switch:checked + .side-menu nav a .side-menu-text{
+    display: none;
+}
+#side-menu-switch:checked + .side-menu nav a .side-menu-img{
+    margin: 0;
+}
+ /* Button Seguros */
+.side-menu nav a .side-menu-img.seguros{
+    background-image: url(../img/Iconos/Seguro.svg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 25px;
+}
+.side-menu nav a.active .side-menu-img.seguros{
+    background-image: url(../img/Iconos/SeguroAlt.svg);
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+.side-menu nav a.active:hover .side-menu-img.seguros{
+    background-image: url(../img/Iconos/SeguroAlt.svg);
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+.side-menu nav a:hover .side-menu-img.seguros{
+    background-image: url(../img/Iconos/Seguro.svg);
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+/* Button Fianzas */
+.side-menu nav a .side-menu-img.fianzas{
+    background-image: url(../img/Iconos/finanzas.svg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 25px;
+}
+.side-menu nav a.active .side-menu-img.fianzas{
+    background-image: url(../img/Iconos/finanzasAlt.svg);
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+.side-menu nav a:hover .side-menu-img.fianzas{
+    background-image: url(../img/Iconos/finanzas.svg);
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+/* Button cobranzas */
+.side-menu nav a .side-menu-img.cobranzas{
+    background-image: url(../img/Iconos/cobranzas.svg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 25px;
+}
+.side-menu nav a.active .side-menu-img.cobranzas{
+    background-image: url(../img/Iconos/cobranzasAlt.svg);
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+.side-menu nav a:hover .side-menu-img.cobranzas{
+    background-image: url(../img/Iconos/cobranzas.svg);
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+/* Button comisiones */
+.side-menu nav a .side-menu-img.comisiones{
+    background-image: url(../img/Iconos/comisiones.svg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 25px;
+}
+.side-menu nav a.active .side-menu-img.comisiones{
+    background-image: url(../img/Iconos/comisionesAlt.svg);
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+.side-menu nav a:hover .side-menu-img.comisiones{
+    background-image: url(../img/Iconos/comisiones.svg);
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+/* Button clientes */
+.side-menu nav a .side-menu-img.clientes{
+    background-image: url(../img/Iconos/clientes.svg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 25px;
+}
+.side-menu nav a.active .side-menu-img.clientes{
+    background-image: url(../img/Iconos/clientesAlt.svg);
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+.side-menu nav a:hover .side-menu-img.clientes{
+    background-image: url(../img/Iconos/clientes.svg);
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+/* Button conciliacion */
+.side-menu nav a .side-menu-img.conciliacion{
+    background-image: url(../img/Iconos/conciliacion.svg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 25px;
+}
+.side-menu nav a.active .side-menu-img.conciliacion{
+    background-image: url(../img/Iconos/conciliacionAlt.svg);
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+.side-menu nav a:hover .side-menu-img.conciliacion{
+    background-image: url(../img/Iconos/conciliacion.svg);
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+/* Button oficina */
+.side-menu nav a .side-menu-img.oficina{
+    background-image: url(../img/Iconos/oficina.svg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 25px;
+}
+.side-menu nav a.active .side-menu-img.oficina{
+    background-image: url(../img/Iconos/oficinaAlt.svg);
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+.side-menu nav a:hover .side-menu-img.oficina{
+    background-image: url(../img/Iconos/oficina.svg);
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+/* Button reportes */
+.side-menu nav a .side-menu-img.reportes{
+    background-image: url(../img/Iconos/reportes.svg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 25px;
+}
+.side-menu nav a.active .side-menu-img.reportes{
+    background-image: url(../img/Iconos/reportesAlt.svg);
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+.side-menu nav a:hover .side-menu-img.reportes{
+    background-image: url(../img/Iconos/reportes.svg);
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+/* Button administracion */
+.side-menu nav a .side-menu-img.administracion{
+    background-image: url(../img/Iconos/administracion.svg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 25px;
+}
+.side-menu nav a.active .side-menu-img.administracion{
+    background-image: url(../img/Iconos/administracionAlt.svg);
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+.side-menu nav a:hover .side-menu-img.administracion{
+    background-image: url(../img/Iconos/administracion.svg);
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+.nav-menu{
+    height: 60px;
+}
+.nav-menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    flex-direction: row;
+    display: flex;
+    align-items: center;
+  }
+.nav-menu .badge {
+    position: relative;
+    left: 37px;
+    top: -13px;
+}
+/* Dropdown Button */
+.nav-menu .dropbtn {
+    background-color: transparent;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    height: 60px;
+  }
+  
+  /* The container <div> - needed to position the dropdown content */
+  .nav-menu .dropdown {
+    position: relative;
+    display: inline-block;
+    height: 60px;
+  }
+  .nav-menu .dropbtn .img-user{
+    padding-left: 10px;
+  }
+  /* Dropdown Content (Hidden by Default) */
+  .nav-menu .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 95%;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  /* Links inside the dropdown */
+  .nav-menu .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  /* Change color of dropdown links on hover */
+  .nav-menu .dropdown-content a:hover {background-color: #ddd;}
+  
+  /* Show the dropdown menu on hover */
+  .nav-menu .dropdown:hover .dropdown-content {display: block;}
+  
+  /* Change the background color of the dropdown button when the dropdown content is shown */
+  .nav-menu .dropdown:hover .dropbtn {background-color: transparent;}
+.d-flex {
+    display: -ms-flexbox!important;
+    display: flex!important;
+}
+.justify-content-end {
+    -ms-flex-pack: end!important;
+    justify-content: flex-end!important;
+}
+.table-wrap{
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+.table {
+    margin-bottom: 1rem;
+    color: #212529;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+.table td {
+    height: 55px;
+    max-height: 55px;
+    vertical-align: middle;
+    border-top: 1px solid #dee2e6;
+    text-align:center;
+}
+.table th{
+    padding: 10px;
+    vertical-align: middle;
+    border-top: 1px solid #dee2e6;
+    text-align:center;
+    white-space: nowrap;
+}
+.table thead th {
+    vertical-align: bottom;
+    border-bottom: 2px solid #dee2e6;
+}
+.table .thead-dark th {
+    color: #fff;
+    background-color: #5D6A72;
+    border-color: #5D6A72;
+}
+.names-roles{
+    padding-top: 32px
+}
+.names-per div h2 {
+    border-bottom: 2px solid #dee2e6;
+}
+.names-per ul li{
+    height: 55px;
+    max-height: 55px;
+    vertical-align: top;
+    border-top: 1px solid #dee2e6;
+    display: flex;
+    align-items: center;
+}
+.content-per .table-wrap{
+    overflow-x:auto;
+    background-color: #FFF;
+    
+}
+/* The switch - the box around the slider */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+  }
+  
+  /* Hide default HTML checkbox */
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  /* The slider */
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #D9DBE9;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 28px;
+    width: 28px;
+    left: 3px;
+    bottom: 3px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  input:checked + .slider {
+    background-color: #e5115c;
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px #e5115c;
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+  }
+  
+  /* Rounded sliders */
+  .slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
+  .form-control {
+    display: block;
+    width: 100%;
+    height: 50px;
+    padding: 10px 10px;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #6E7191;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #B7BBBC;
+    border-radius: 15px;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+.card {
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 1px solid rgba(255, 255, 255, 0.125);
+    border-radius: 15px;
+    box-shadow: 2px 2px 5px -3px rgba(0,0,0,0.36);
+}
+.card-body {
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    min-height: 1px;
+    padding: 1.25rem;
+}
+.title-app{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.img-logout{
+    width: 250px;
+}

@@ -1,0 +1,28 @@
+.templateTitle{
+    color: white;
+    background-color: #E5105D;
+    
+}
+
+.padre .hijo {
+    float: left;
+    padding: 5px;
+    
+  }
+
+
+  .marginTop{
+    margin-top: 20px;
+    margin-bottom: 20px ;  
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+
+
+  .marginTopGrid{
+    margin-top: 20px;
+  }
+  .marginBottomGrid{
+    
+    margin-bottom: 16px ;
+  }

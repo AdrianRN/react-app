@@ -1,0 +1,27 @@
+.customGridSize{
+    min-width:  200px;
+    /* height: 400px; */
+    /* padding: 50px; */
+}
+
+.okButton {
+    display: inline-block;
+    padding: 6px 12px;
+    background-color: #008001;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+.noButton {
+    display: inline-block;
+    padding: 6px 12px;
+    background-color: #dd3444;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+.large-screen-columns {
+   flex: 1;
+ }

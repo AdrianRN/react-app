@@ -1,0 +1,245 @@
+/*------------------------------------------Home styles--------------------------------------------------------*/
+
+.card-scroll {
+    overflow-y: scroll;
+    border-radius: 15px;
+    max-height: 50vh;
+}
+
+ 
+
+.card-scroll::-webkit-scrollbar {
+    -webkit-appearance: none;
+}
+
+ 
+.card-scroll::-webkit-scrollbar:vertical {
+    width: 5px;
+}
+
+
+.card-scroll::-webkit-scrollbar-thumb {
+    background-color: #5D6A72;
+    border-radius: 20px;
+    border: 1px solid #f1f2f3;
+
+}
+
+ 
+
+.card-scroll::-webkit-scrollbar-track {
+
+    border-radius: 10px;
+
+}
+
+
+
+/*----------------------------------------Public Modal styles-------------------------------------------------*/
+.listButtonText{
+    width: 300px;
+    font-size: 15px;
+    font-family: sans-serif;
+    padding:8px;
+    justify-content:space-between;
+    border-bottom: 1px solid rgb(247, 247, 252);
+}
+
+.publicIcon{
+    width:15px;
+    font-weight:normal;
+    font-style:normal;
+    height:15px;
+    color: rgb(229, 16, 93);
+}
+.public-modal{
+    position: absolute as absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 523px;
+    height: 350px;
+    padding: 16px;
+    border-radius: 20px;
+    background: #FFF;
+    box-shadow: 0px 4px 6px 0px rgb(0, 0, 0, 0.04);
+    background-color: 'background.paper';
+    padding: 4;
+}
+
+.public-modal-content{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+    align-self: stretch;
+}
+
+.public-modal-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-self: stretch;
+    gap: 8px;
+    padding-bottom: 10px;
+}
+
+.public-modal-name{
+    color: #000;
+    font-feature-settings: 'clig' off, 'liga' off;                                               
+    font-family: Titillium Web;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: 0.75px;
+}
+
+.public-modal-dateContent{
+    display: flex;                                                          
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+.public-modal-creation{
+    color: #6E7191;
+    text-align: center;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: Titillium Web;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 0.25px;
+}
+
+.public-modal-dateLabel{
+    display: flex;
+    padding: 5px 8px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    border-radius: 8px;
+    background: #F7F7FC;
+}
+
+.public-modal-date{
+    color: #6E7191;
+    text-align: center;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: Titillium Web;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 0.25px;
+}
+
+.public-modal-titleContent{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 32px;
+    align-self: stretch;
+    margin-bottom:8px;
+}
+
+.public-modal-title{
+    color: #000;
+    text-align: center;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: Titillium Web;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px; /* 146.667% */
+    letter-spacing: 0.25px;
+    margin-top:8px;
+}
+
+.public-modal-descriptionContent{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    align-self: stretch;
+}
+
+.public-modal-descriptionText{
+    color: #6E7191;
+    text-align: center;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: sans-serif;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 0.25px;
+}
+
+.public-modal-descriptionLabel{
+    display: flex;
+    padding: 5px 8px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    align-self: stretch;
+    border-radius: 8px;
+    background: #F7F7FC;
+    height: 130px;
+    margin-top: 8px;
+}
+
+.public-modal-descriptionLabelText{
+    color: #6E7191;
+    font-feature-settings: 'clig' off, 'liga' off;                                 
+    font-family: sans-serif;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 0.25px;
+}
+
+.public-modal-buttonContent{
+    display: flex;
+    padding: 8px 20px;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    border-radius: 16px;
+    border: 2px solid #E5105D;
+    margin-top:16px;
+    text-transform: lowercase;
+}
+
+.public-modal-buttonText{
+    color: #E5105D;
+    font-feature-settings: 'clig' off, 'liga' off; 
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: 0.75px;
+}
+
+
+/*-------------------------------------------------Personal Modal styles------------------------------------*/
+
+.personal-modal{
+    position: 'absolute' as 'absolute';
+    top: '50%';
+    left: '50%';
+    transform: 'translate(-50%, -50%)';
+    width: '555px';        
+    height: '377px';
+    padding:'16px';
+    border-radius: '20px';
+    background: #FFF;
+    box-shadow: '0px 4px 6px 0px rgb(0, 0, 0, 0.04)';
+    background-color: 'background.paper';
+    padding: 4;
+}

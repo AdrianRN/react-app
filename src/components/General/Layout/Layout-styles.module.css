@@ -1,0 +1,1192 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+div {
+    display: block;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: 'Rubik', sans-serif;
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 15px;
+}
+
+.w-100 {
+    width: 100%;
+}
+
+.h-100 {
+    height: 100%;
+}
+
+.d-flex {
+    display: flex !important;
+}
+
+.p25 {
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+.pr25 {
+    padding-right: 25px;
+}
+
+.pl10 {
+    padding-left: 10px;
+}
+
+.align-items-end {
+    align-items: flex-end !important;
+}
+
+.align-items-center {
+    -ms-flex-align: center !important;
+    align-items: center !important;
+}
+
+label {
+    display: inline-block;
+}
+
+.form-label {
+    margin-bottom: 0.5rem;
+}
+
+.form-control {
+    display: block;
+    width: 100%;
+    padding: 0.375rem 0.75rem;
+    height: 50px;
+    max-height: 50px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #000000;
+    background: #FFF;
+    background-color: #FFF;
+    border: 1px solid #FFF;
+    border-radius: 15px;
+    transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+}
+
+.form-group {
+    text-align: left;
+    margin-top: 10px;
+}
+
+.btn {
+    background-color: #E5105D;
+    /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 15px;
+    border-radius: 15px;
+    width: 100%;
+}
+
+.btn-ouline {
+    background-color: #FFF !important;
+    border: 2px solid #E5105D !important;
+    color: #000000 !important;
+}
+
+.badge {
+    display: inline-block;
+    padding: 0.25em 0.4em;
+    font-size: 75%;
+    font-weight: 700;
+    line-height: 1;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: baseline;
+    border-radius: 0.25rem;
+    transition: color .15s ease-in-out,
+        background-color .15s ease-in-out,
+        border-color .15s ease-in-out,
+        box-shadow .15s ease-in-out;
+}
+
+.badge-pill {
+    padding-right: 0.6em;
+    padding-left: 0.6em;
+    border-radius: 10rem;
+}
+
+.badge-onesta {
+    color: #fff;
+    background-color: #e5105d;
+}
+
+.split {
+    height: 100%;
+    width: 50%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    overflow-x: hidden;
+}
+
+.left {
+    left: 0;
+    background-color: #f7f7fc;
+}
+
+.right {
+    right: 0;
+    background-image: url(/public/img/unsplash_tZw3fcjUIpM.png);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.centered img {
+    width: 91px;
+}
+
+.login-form {
+    width: 400px;
+}
+
+.text-login-image {
+    position: absolute;
+    top: 70%;
+    left: 5%;
+}
+
+.text-login-image h2 {
+    color: #FFF;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 0.75px;
+}
+
+.text-login-form h2 {
+    font-size: 35px;
+}
+
+.side-menu-logo {
+    border-bottom: 1px solid #FFF;
+    margin-bottom: 15px;
+    height: 85px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.side-menu-logo .side-menu-text {
+    position: relative;
+    top: -10px;
+    font-size: 17px;
+    font-weight: 700;
+    color: #FFF;
+    border: none;
+}
+
+.side-menu-powered {
+    height: 75px;
+    text-align: center;
+}
+
+.side-menu-powered img {
+    width: 75px;
+    text-align: center;
+}
+
+.side-menu {
+    width: 235px;
+    height: 100%;
+    padding-left: 10px;
+    padding-right: 10px;
+    box-sizing: border-box;
+    background-image: linear-gradient(0deg, #f35337, #e5105d);
+    display: flex;
+    flex-flow: column nowrap;
+    box-shadow: 4px 0px 6px rgba(17, 26, 41, 0.6);
+    position: fixed;
+    z-index: 1;
+    transition: .5s;
+    /*transform: translateX(0);*/
+}
+
+.nav-header {
+    position: fixed;
+    width: 100%;
+    height: 60px;
+    background-color: #5d6a72;
+    z-index: 1;
+}
+
+.content-wrap {
+    width: 100%;
+    height: 100%;
+    padding-top: 110px;
+    padding-right: 20px;
+}
+
+.content {
+    margin-top: 5%;
+    margin-left: 30%;
+    transition: .5s;
+}
+
+.side-menu form {
+    display: flex;
+    margin: 0 10px 50px;
+    border-radius: 100px;
+    border: 1px solid #fff;
+
+}
+
+.side-menu form input,
+.side-menu form button {
+    background-color: transparent;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+}
+
+.side-menu form input {
+    width: 230px;
+}
+
+.side-menu label {
+    position: absolute;
+    width: 40px;
+    height: 50px;
+    background-color: #e6145a;
+    color: #fff;
+    right: -40px;
+    top: 59px;
+    margin: auto;
+    line-height: 80px;
+    text-align: center;
+    font-size: 30px;
+    border-radius: 0 25px 25px 0;
+    cursor: pointer;
+    background-image: url(/public/img/Iconos/cerrar.svg);
+    background-position: 2px center;
+    background-repeat: no-repeat;
+}
+
+#side-menu-switch {
+    position: absolute;
+    opacity: 0;
+}
+
+#side-menu-switch:not(:checked)+.side-menu .side-menu-powered {
+    display: none;
+}
+
+#side-menu-switch:not(:checked)+.side-menu label {
+    background-image: url(/public/img/Iconos/abrir.svg);
+}
+
+#side-menu-switch:not(:checked)+.side-menu .side-menu-logo .side-menu-text {
+    display: none;
+}
+
+#side-menu-switch:not(:checked)+.side-menu {
+    width: 96px;
+}
+
+#side-menu-switch:not(:checked)+.side-menu label .fas {
+    transform: scaleX(-1);
+}
+
+#side-menu-switch:not(:checked)+.side-menu+.content-wrap .content {
+    margin-left: 127px;
+}
+
+::placeholder {
+    /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #fff;
+    opacity: 1;
+    /* Firefox */
+}
+
+.side-menu form button {
+    width: 50px;
+}
+
+.side-menu form input:focus::placeholder {
+    color: #ccc;
+}
+
+.side-menu form input:focus,
+.side-menu form button:focus {
+    outline: none;
+}
+
+.side-menu nav {
+    overflow: auto;
+}
+
+.side-menu nav::-webkit-scrollbar {
+    -webkit-appearance: none;
+}
+
+.side-menu nav::-webkit-scrollbar:vertical {
+    width: 5px;
+}
+
+.side-menu nav::-webkit-scrollbar-thumb {
+    background-color: #5D6A72;
+    border-radius: 20px;
+    border: 1px solid #f1f2f3;
+}
+
+.side-menu nav::-webkit-scrollbar-track {
+    border-radius: 10px;
+}
+
+.side-menu nav a {
+    display: block;
+    padding: 10px;
+    color: #fff;
+    font-weight: 500;
+    text-decoration: none;
+    position: relative;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 5px;
+}
+
+.side-menu nav a.active {
+    color: #5D6A72;
+    background: #FFF;
+    background-image: url(/public/img/Iconos/activeIndicator.svg);
+    background-position: left center;
+    background-repeat: no-repeat;
+    font-weight: 700;
+
+}
+
+#side-menu-switch:not(:checked)+.side-menu nav a.active {
+    background-size: 3px;
+}
+
+.side-menu nav a.active:hover {
+    color: #5D6A72;
+    background: #FFF;
+    background-image: url(/public/img/Iconos/activeIndicator.svg);
+    background-position: left center;
+    background-repeat: no-repeat;
+    font-weight: 700;
+}
+
+.side-menu nav a:hover {
+    color: #FFF;
+    background: #EF709E;
+    background-image: none;
+    cursor: pointer;
+}
+
+.side-menu nav a:focus {
+    color: #FFF;
+    background: #840a36;
+    background-image: none;
+}
+
+.side-menu nav a .side-menu-img {
+    width: 28px;
+    height: 28px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.side-menu nav a+a::before {
+    content: '';
+    position: absolute;
+    left: 10px;
+    right: 10px;
+    top: 0;
+}
+
+/* Method 1 */
+.side-menu nav a .fas {
+    margin-right: -1.1em;
+    transform: scale(0);
+    transition: .5s;
+}
+
+.side-menu nav a:hover .fas {
+    margin-right: 0.3em;
+    transform: scale(1);
+}
+
+#side-menu-switch:not(:checked)+.side-menu nav a .side-menu-text {
+    display: none;
+}
+
+#side-menu-switch:not(:checked)+.side-menu nav a .side-menu-img {
+    margin: 0;
+}
+
+/* Button Seguros */
+.side-menu nav a .side-menu-img.Seguros {
+    background-image: url(/public/img/Iconos/Seguro.svg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 25px;
+}
+
+.side-menu nav a.active .side-menu-img.Seguros {
+    background-image: url(/public/img/Iconos/SeguroAlt.svg);
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.side-menu nav a.active:hover .side-menu-img.Seguros {
+    background-image: url(/public/img/Iconos/SeguroAlt.svg);
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.side-menu nav a:hover .side-menu-img.Seguros {
+    background-image: url(/public/img/Iconos/Seguro.svg);
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+/* Button Fianzas */
+.side-menu nav a .side-menu-img.Fianzas {
+    background-image: url(/public/img/Iconos/finanzas.svg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 25px;
+}
+
+.side-menu nav a.active .side-menu-img.Fianzas {
+    background-image: url(/public/img/Iconos/finanzasAlt.svg);
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.side-menu nav a.active:hover .side-menu-img.Fianzas {
+    background-image: url(/public/img/Iconos/finanzasAlt.svg);
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.side-menu nav a:hover .side-menu-img.Fianzas {
+    background-image: url(/public/img/Iconos/finanzas.svg);
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+/* Button cobranzas */
+.side-menu nav a .side-menu-img.Cobranza {
+    background-image: url(/public/img/Iconos/cobranzas.svg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 25px;
+}
+
+.side-menu nav a.active .side-menu-img.Cobranza {
+    background-image: url(/public/img/Iconos/cobranzasAlt.svg);
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.side-menu nav a.active:hover .side-menu-img.Cobranza {
+    background-image: url(/public/img/Iconos/cobranzasAlt.svg);
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+
+.side-menu nav a:hover .side-menu-img.Cobranza {
+    background-image: url(/public/img/Iconos/cobranzas.svg);
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+/* Button comisiones */
+.side-menu nav a .side-menu-img.Comisiones {
+    background-image: url(/public/img/Iconos/comisiones.svg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 25px;
+}
+
+.side-menu nav a.active .side-menu-img.Comisiones {
+    background-image: url(/public/img/Iconos/comisionesAlt.svg);
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.side-menu nav a.active:hover .side-menu-img.Comisiones {
+    background-image: url(/public/img/Iconos/comisionesAlt.svg);
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.side-menu nav a:hover .side-menu-img.Comisiones {
+    background-image: url(/public/img/Iconos/comisiones.svg);
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+/* Button clientes */
+.side-menu nav a .side-menu-img.Clientes {
+    background-image: url(/public/img/Iconos/clientes.svg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 25px;
+}
+
+.side-menu nav a.active .side-menu-img.Clientes {
+    background-image: url(/public/img/Iconos/clientesAlt.svg);
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.side-menu nav a.active:hover .side-menu-img.Clientes {
+    background-image: url(/public/img/Iconos/clientesAlt.svg);
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.side-menu nav a:hover .side-menu-img.Clientes {
+    background-image: url(/public/img/Iconos/clientes.svg);
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+/* Button conciliacion */
+.side-menu nav a .side-menu-img.Conciliaciones {
+    background-image: url(/public/img/Iconos/conciliacion.svg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 25px;
+}
+
+.side-menu nav a.active .side-menu-img.Conciliaciones {
+    background-image: url(/public/img/Iconos/conciliacionAlt.svg);
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.side-menu nav a.active:hover .side-menu-img.Conciliaciones {
+    background-image: url(/public/img/Iconos/conciliacionAlt.svg);
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.side-menu nav a:hover .side-menu-img.Conciliaciones {
+    background-image: url(/public/img/Iconos/conciliacion.svg);
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+/* Button oficina */
+.side-menu nav a .side-menu-img.Oficina {
+    background-image: url(/public/img/Iconos/oficina.svg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 25px;
+}
+
+.side-menu nav a.active .side-menu-img.Oficina {
+    background-image: url(/public/img/Iconos/oficinaAlt.svg);
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.side-menu nav a.active:hover .side-menu-img.Oficina {
+    background-image: url(/public/img/Iconos/oficinaAlt.svg);
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.side-menu nav a:hover .side-menu-img.Oficina {
+    background-image: url(/public/img/Iconos/oficina.svg);
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+/* Button reportes */
+.side-menu nav a .side-menu-img.Reportes {
+    background-image: url(/public/img/Iconos/reportes.svg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 25px;
+}
+
+.side-menu nav a.active .side-menu-img.Reportes {
+    background-image: url(/public/img/Iconos/reportesAlt.svg);
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.side-menu nav a.active:hover .side-menu-img.Reportes {
+    background-image: url(/public/img/Iconos/reportesAlt.svg);
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.side-menu nav a:hover .side-menu-img.Reportes {
+    background-image: url(/public/img/Iconos/reportes.svg);
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+/* Button administracion */
+.side-menu nav a .side-menu-img.Administracion {
+    background-image: url(/public/img/Iconos/administracion.svg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 25px;
+}
+
+.side-menu nav a.active .side-menu-img.Administracion {
+    background-image: url(/public/img/Iconos/administracionAlt.svg);
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.side-menu nav a.active:hover .side-menu-img.Administracion {
+    background-image: url(/public/img/Iconos/administracionAlt.svg);
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.side-menu nav a:hover .side-menu-img.Administracion {
+    background-image: url(/public/img/Iconos/administracion.svg);
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+/* Button Polizas */
+.side-menu nav a .side-menu-img.Polizas {
+    background-image: url(/public/img/Iconos/polizas.svg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 25px;
+}
+
+.side-menu nav a.active .side-menu-img.Polizas {
+    background-image: url(/public/img/Iconos/polizas-alt.svg);
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.side-menu nav a.active:hover .side-menu-img.Polizas {
+    background-image: url(/public/img/Iconos/polizas-alt.svg);
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.side-menu nav a:hover .side-menu-img.Polizas {
+    background-image: url(/public/img/Iconos/polizas.svg);
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+/* Button Cotizaciones */
+.side-menu nav a .side-menu-img.Cotizaciones {
+    background-image: url(/public/img/Iconos/cotizacion.svg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 25px;
+}
+
+.side-menu nav a.active .side-menu-img.Cotizaciones {
+    background-image: url(/public/img/Iconos/cotizacion-alt.svg);
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.side-menu nav a.active:hover .side-menu-img.Cotizaciones {
+    background-image: url(/public/img/Iconos/cotizacion-alt.svg);
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.side-menu nav a:hover .side-menu-img.Cotizaciones {
+    background-image: url(/public/img/Iconos/cotizacion.svg);
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+/* Button Multicotizador */
+.side-menu nav a .side-menu-img.Multicotizador {
+    background-image: url(/public/img/Iconos/multicotizador.svg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 25px;
+}
+
+.side-menu nav a.active .side-menu-img.Multicotizador {
+    background-image: url(/public/img/Iconos/multicotizador-alt.svg);
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.side-menu nav a.active:hover .side-menu-img.Multicotizador {
+    background-image: url(/public/img/Iconos/multicotizador-alt.svg);
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.side-menu nav a:hover .side-menu-img.Multicotizador {
+    background-image: url(/public/img/Iconos/multicotizador.svg);
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+/* Button Siniestros */
+.side-menu nav a .side-menu-img.Siniestros {
+    background-image: url(/public/img/Iconos/siniestros.svg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 25px;
+}
+
+.side-menu nav a.active .side-menu-img.Siniestros {
+    background-image: url(/public/img/Iconos/siniestros-alt.svg);
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.side-menu nav a.active:hover .side-menu-img.Siniestros {
+    background-image: url(/public/img/Iconos/siniestros-alt.svg);
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.side-menu nav a:hover .side-menu-img.Siniestros {
+    background-image: url(/public/img/Iconos/siniestros.svg);
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+/* Button Prospectos */
+.side-menu nav a .side-menu-img.Prospectos {
+    background-image: url(/public/img/Iconos/prospectos.svg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 25px;
+}
+
+.side-menu nav a.active .side-menu-img.Prospectos {
+    background-image: url(/public/img/Iconos/prospectos-alt.svg);
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.side-menu nav a.active:hover .side-menu-img.Prospectos {
+    background-image: url(/public/img/Iconos/prospectos-alt.svg);
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.side-menu nav a:hover .side-menu-img.Prospectos {
+    background-image: url(/public/img/Iconos/prospectos.svg);
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+/* Button Catalogos */
+.side-menu nav a .side-menu-img.Catalogos {
+    background-image: url(/public/img/Iconos/catalogos.svg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 25px;
+}
+
+.side-menu nav a.active .side-menu-img.Catalogos {
+    background-image: url(/public/img/Iconos/catalogos-alt.svg);
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.side-menu nav a.active:hover .side-menu-img.Catalogos {
+    background-image: url(/public/img/Iconos/catalogos-alt.svg);
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.side-menu nav a:hover .side-menu-img.Catalogos {
+    background-image: url(/public/img/Iconos/catalogos.svg);
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+/* Button Usuarios */
+.side-menu nav a .side-menu-img.Usuarios {
+    background-image: url(/public/img/Iconos/usuarios.svg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 25px;
+}
+
+.side-menu nav a.active .side-menu-img.Usuarios {
+    background-image: url(/public/img/Iconos/usuarios-alt.svg);
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.side-menu nav a.active:hover .side-menu-img.Usuarios {
+    background-image: url(/public/img/Iconos/usuarios-alt.svg);
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.side-menu nav a:hover .side-menu-img.Usuarios {
+    background-image: url(/public/img/Iconos/usuarios.svg);
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+/* Button Personas */
+.side-menu nav a .side-menu-img.Personas {
+    background-image: url(/public/img/Iconos/personas.svg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 25px;
+}
+
+.side-menu nav a.active .side-menu-img.Personas {
+    background-image: url(/public/img/Iconos/personas-alt.svg);
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.side-menu nav a.active:hover .side-menu-img.Personas {
+    background-image: url(/public/img/Iconos/personas-alt.svg);
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.side-menu nav a:hover .side-menu-img.Personas {
+    background-image: url(/public/img/Iconos/personas.svg);
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+/* Button Compañias */
+.side-menu nav a .side-menu-img.Companias {
+    background-image: url(/public/img/Iconos/companias.svg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 25px;
+}
+
+.side-menu nav a.active .side-menu-img.Companias {
+    background-image: url(/public/img/Iconos/companias-alt.svg);
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.side-menu nav a.active:hover .side-menu-img.Companias {
+    background-image: url(/public/img/Iconos/companias-alt.svg);
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.side-menu nav a:hover .side-menu-img.Companias {
+    background-image: url(/public/img/Iconos/companias.svg);
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+/* Button Metas Anuales */
+.side-menu nav a .side-menu-img.Metas {
+    background-image: url(/public/img/Iconos/metas_anualesAlt.svg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 25px;
+}
+
+.side-menu nav a.active .side-menu-img.Metas {
+    background-image: url(/public/img/Iconos/metas_anuales.svg);
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.side-menu nav a.active:hover .side-menu-img.Metas {
+    background-image: url(/public/img/Iconos/metas_anuales.svg);
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.side-menu nav a:hover .side-menu-img.Metas {
+    background-image: url(/public/img/Iconos/metas_anualesAlt.svg);
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+/* Button Comunicados */
+.side-menu nav a .side-menu-img.Comunicados {
+    background-image: url(/public/img/Iconos/comunicadosAlt.svg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 25px;
+}
+
+.side-menu nav a.active .side-menu-img.Comunicados {
+    background-image: url(/public/img/Iconos/comunicados.svg);
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.side-menu nav a.active:hover .side-menu-img.Comunicados {
+    background-image: url(/public/img/Iconos/comunicados.svg);
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.side-menu nav a:hover .side-menu-img.Comunicados {
+    background-image: url(/public/img/Iconos/comunicadosAlt.svg);
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+/* Button Importación */
+.side-menu nav a .side-menu-img.Importacion {
+    background-image: url(/public/img/Iconos/politicas_segurosAlt.svg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 25px;
+}
+
+.side-menu nav a.active .side-menu-img.Importacion {
+    background-image: url(/public/img/Iconos/politicas_seguros.svg);
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.side-menu nav a.active:hover .side-menu-img.Importacion {
+    background-image: url(/public/img/Iconos/politicas_seguros.svg);
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.side-menu nav a:hover .side-menu-img.Importacion {
+    background-image: url(/public/img/Iconos/politicas_segurosAlt.svg);
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+/* Button Documento Fuente */
+.side-menu nav a .side-menu-img.Documento {
+    background-image: url(/public/img/Iconos/DocumentoFuente.svg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 25px;
+}
+
+.side-menu nav a.active .side-menu-img.Documento {
+    background-image: url(/public/img/Iconos/DocumentoFuente.svg);
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.side-menu nav a.active:hover .side-menu-img.Documento {
+    background-image: url(/public/img/Iconos/DocumentoFuente-alt.svg);
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.side-menu nav a:hover .side-menu-img.Documento {
+    background-image: url(/public/img/Iconos/DocumentoFuente.svg);
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+/* Button Endosos */
+.side-menu nav a .side-menu-img.Endosos {
+    background-image: url(/public/img/Iconos/endosos-alt.svg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 25px;
+}
+
+.side-menu nav a.active .side-menu-img.Endosos {
+    background-image: url(/public/img/Iconos/endosos-alt.svg);
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.side-menu nav a.active:hover .side-menu-img.Endosos {
+    background-image: url(/public/img/Iconos/endosos-alt.svg);
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.side-menu nav a:hover .side-menu-img.Endosos {
+    background-image: url(/public/img/Iconos/endosos-alt.svg);
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.nav-menu {
+    height: 60px;
+}
+
+.nav-menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    flex-direction: row;
+    display: flex;
+    align-items: center;
+}
+
+.nav-menu .badge {
+    position: relative;
+    left: 37px;
+    top: -13px;
+}
+
+/* Dropdown Button */
+.nav-menu .dropbtn {
+    background-color: transparent;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    height: 60px;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.nav-menu .dropdown {
+    position: relative;
+    display: inline-block;
+    height: 60px;
+}
+
+.nav-menu .dropbtn .img-user {
+    padding-left: 10px;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.nav-menu .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 95%;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+/* Links inside the dropdown */
+.nav-menu .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Change color of dropdown links on hover */
+.nav-menu .dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+/* Show the dropdown menu on hover */
+.nav-menu .dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.nav-menu .dropdown:hover .dropbtn {
+    background-color: transparent;
+}
+
+.d-flex {
+    display: -ms-flexbox !important;
+    display: flex !important;
+}
+
+.justify-content-end {
+    -ms-flex-pack: end !important;
+    justify-content: flex-end !important;
+}
+
+.table {
+    width: 100%;
+    margin-bottom: 1rem;
+    color: #212529;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+.table td,
+.table th {
+    padding: 0.75rem;
+    vertical-align: top;
+    border-top: 1px solid #dee2e6;
+}
+
+.table thead th {
+    vertical-align: bottom;
+    border-bottom: 2px solid #dee2e6;
+}
+
+.table .thead-dark th {
+    color: #fff;
+    background-color: #343a40;
+    border-color: #454d55;
+}
+
+.content-per {
+    overflow-x: auto;
+}
+
+.notify-menu {
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.notify-menu::-webkit-scrollbar {
+    -webkit-appearance: none;
+}
+
+.notify-menu::-webkit-scrollbar:vertical {
+    width: 5px;
+}
+
+.notify-menu::-webkit-scrollbar-thumb {
+    background-color: #5D6A72;
+    border-radius: 20px;
+    border: 1px solid #f1f2f3;
+}
+
+.notify-menu::-webkit-scrollbar-track {
+    border-radius: 10px;
+}

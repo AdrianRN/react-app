@@ -1,0 +1,104 @@
+/* Variables */
+:root {
+  --ColorErrorLight: #FFE5F2;
+  --ColorError: #E40173;
+  --ColorWarningLight: #FEFEE5;
+  --ColorWarning: #DCC80F;
+  --ColorInfoLight: #C7E9FF;
+  --ColorInfo: #1976d2;
+  --ColorSuccessLight: #E5FFF2;
+  --ColorSuccess: #00CC67;
+  --ColorPureBlack: #000;
+  --FontBase: 'Titillium Web', Arial, sans-serif;
+}
+
+/* Styles */
+.Toastify__toast-container {
+  position: fixed;
+  top: 20%;
+  left: 50%;
+  right: 30%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+  flex-direction: column;
+}
+
+.Toastify__toast {
+  border-radius: 25px;
+  padding: 6px 16px;
+  display: flex;
+  width: 711px;
+}
+
+.Toastify__toast--error {
+  background-color: var(--ColorErrorLight);
+  color: var(--ColorError);
+}
+
+.Toastify__toast--warning {
+  background-color: var(--ColorWarningLight);
+  color: var(--ColorWarning);
+}
+
+.Toastify__toast--info {
+  background-color: var(--ColorInfoLight);
+  color: var(--ColorInfo);
+}
+
+.Toastify__toast--success {
+  background-color: var(--ColorSuccessLight);
+  color: var(--ColorSuccess);
+}
+
+.Toastify__toast-body {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 6px 16px;
+  gap: 10px;
+  flex: 1;
+  text-align: center;
+}
+
+.Toastify__toast-body div {
+  font-family: var(--FontBase);
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 24px;
+  letter-spacing: 0.75px;
+  margin: 0;
+  padding: 0;
+  color: var(--ColorPureBlack);
+  max-width: 800px;
+}
+
+.Toastify__toast-icon > .MuiSvgIcon-root {
+  display: flex;
+  margin-right: 8px;
+  width: 22px;
+}
+
+.Toastify__toast-icon svg {
+  width: 100%;
+  height: 100%;
+  color: inherit;
+}
+
+.Toastify__toast-icon > .successIcon{  
+  color: var(--ColorSuccess);
+}
+
+.Toastify__toast-icon > .warningIcon{  
+  color: var(--ColorWarning);
+}
+
+.Toastify__toast-icon > .errorIcon{  
+  color: var(--ColorError);
+}
+
+.Toastify__toast-icon > .infoIcon{  
+  color: var(--ColorInfo);
+}

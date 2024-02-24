@@ -1,0 +1,13 @@
+.customCalendarContainer {
+    border: 1px solid #ccc;
+    padding: 10px;
+  }
+  
+  .customCalendarRoot {
+    background-color: #f7f7f7;
+  }
+  
+  .customCalendarDay {
+    font-weight: bold;
+  }
+  

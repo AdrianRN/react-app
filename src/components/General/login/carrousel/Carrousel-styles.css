@@ -1,0 +1,19 @@
+.carousel-container {
+    /* width: 704px; Ancho deseado */
+    max-width: 100%; /* Para que se ajuste al contenedor si es más pequeño */
+    margin: 0 auto; /* Centrar horizontalmente */
+  }
+  
+  .carousel-slide {
+    display: flex; /* Para centrar verticalmente la imagen */
+    justify-content: center;
+    align-items: center;
+    height: 1024px; /* Altura deseada */
+  }
+  
+  .carousel-image {
+    max-width: 100%;
+    max-height: 100%;
+    width: auto;
+    height: auto;
+  }

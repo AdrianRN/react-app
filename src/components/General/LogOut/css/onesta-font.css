@@ -1,0 +1,108 @@
+@font-face {
+  font-family: 'onesta';
+  src:  url('fonts/onesta.eot?13s10y');
+  src:  url('fonts/onesta.eot?13s10y#iefix') format('embedded-opentype'),
+    url('fonts/onesta.ttf?13s10y') format('truetype'),
+    url('fonts/onesta.woff?13s10y') format('woff'),
+    url('fonts/onesta.svg?13s10y#onesta') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'onesta' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-Adjuntar:before {
+  content: "\e900";
+}
+.icon-Ajustes:before {
+  content: "\e901";
+}
+.icon-Cancelar:before {
+  content: "\e902";
+}
+.icon-Compartir:before {
+  content: "\e903";
+}
+.icon-Consultar:before {
+  content: "\e904";
+}
+.icon-Editar1:before {
+  content: "\e905";
+}
+.icon-Endosos:before {
+  content: "\e906";
+}
+.icon-Imprimir:before {
+  content: "\e907";
+}
+.icon-Log:before {
+  content: "\e908";
+}
+.icon-Recibos:before {
+  content: "\e909";
+}
+.icon-Renovar:before {
+  content: "\e90a";
+}
+.icon-Seguimiento:before {
+  content: "\e90b";
+}
+.icon-Siniestros:before {
+  content: "\e90c";
+}
+.icon-Terminar:before {
+  content: "\e90d";
+}
+.icon-Adjuntar1:before {
+  content: "\e90e";
+}
+.icon-Agregar:before {
+  content: "\e90f";
+}
+.icon-Buscar:before {
+  content: "\e910";
+}
+.icon-Cancelar1:before {
+  content: "\e911";
+}
+.icon-Descargar:before {
+  content: "\e912";
+}
+.icon-Editar:before {
+  content: "\e913";
+}
+.icon-Eliminar:before {
+  content: "\e914";
+}
+.icon-Enviar:before {
+  content: "\e915";
+}
+.icon-Filtar:before {
+  content: "\e916";
+}
+.icon-Guardar:before {
+  content: "\e917";
+}
+.icon-Historial:before {
+  content: "\e918";
+}
+.icon-Home:before {
+  content: "\e919";
+}
+.icon-Ordenar:before {
+  content: "\e91a";
+}
